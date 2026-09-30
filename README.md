@@ -1,81 +1,85 @@
-# Embarcadero RTL Recovery Archive
+# آرشیو بازیابی RTLهای Embarcadero
 
-A personal archive created from practical experience with Windows applications developed using Delphi and Embarcadero development tools.
+این مخزن یک آرشیو شخصی است که بر اساس تجربهٔ عملی در توسعه، نصب و نگهداری نرم‌افزارهای Windows نوشته‌شده با Delphi و ابزارهای توسعهٔ Embarcadero ایجاد شده است.
 
-## Purpose
+## هدف
 
-Over the years, applications that had previously worked correctly could stop starting after unrelated changes to the Windows environment. Runtime dependencies could be deleted, damaged, replaced, or otherwise become unavailable.
+در طول سال‌ها، پیش آمده است که نرم‌افزاری که قبلاً به‌درستی کار می‌کرده، پس از تغییرات نامرتبط در محیط Windows دیگر اجرا نمی‌شده است. Runtime dependencyهای نرم‌افزار ممکن است حذف، خراب، جایگزین یا به هر دلیل دیگری در دسترس نباشند.
 
-This repository was originally created as a convenient personal collection of runtime files that could help diagnose and recover such applications without having to search for individual dependencies one by one.
+این مخزن در ابتدا به‌عنوان مجموعه‌ای شخصی از فایل‌های runtime ایجاد شد تا در چنین شرایطی، بدون جست‌وجوی جداگانه برای هر dependency، امکان تشخیص و بازیابی سریع‌تر نرم‌افزارهای موجود فراهم شود.
 
-The repository is now maintained as **documentation and a record of that experience**. Proprietary or otherwise uncertain third-party runtime files are intentionally not distributed here.
+این مخزن اکنون به‌عنوان **مستندات و ثبت این تجربهٔ فنی** نگهداری می‌شود. فایل‌های proprietary یا فایل‌هایی که وضعیت مجاز بودن بازتوزیع آن‌ها برایشان روشن نیست، عمداً در این مخزن عمومی توزیع نمی‌شوند.
 
-## Why Runtime Dependencies Can Matter
+## چرا Runtime Dependencyها اهمیت دارند؟
 
-A Delphi/Embarcadero application may depend on runtime libraries or packages in addition to its own executable.
+یک برنامهٔ Delphi/Embarcadero ممکن است علاوه بر فایل اجرایی خود، به Runtime Libraryها یا Runtime Packageهای دیگری نیز وابسته باشد.
 
-A previously working application can therefore fail after:
+در نتیجه، نرم‌افزاری که قبلاً بدون مشکل کار می‌کرد، ممکن است پس از مواردی مانند زیر اجرا نشود:
 
-- system maintenance or recovery;
-- removal or replacement of software;
-- accidental deletion or corruption of runtime files;
-- changes to the application environment;
-- hardware or operating-system changes.
+- تعمیر، بازیابی یا نگهداری سیستم؛
+- حذف یا جایگزینی نرم‌افزارهای دیگر؛
+- حذف یا خراب شدن تصادفی فایل‌های runtime؛
+- تغییرات محیط اجرای نرم‌افزار؛
+- تغییرات سخت‌افزاری یا سیستم‌عامل.
 
-When troubleshooting such a failure, the correct dependency and compatible version should be identified rather than replacing files solely because they have the same filename.
+هنگام بررسی چنین مشکلی، باید dependency صحیح و نسخهٔ سازگار آن شناسایی شود و نباید صرفاً به دلیل یکسان بودن نام فایل، فایل دیگری جایگزین آن شود.
 
-## Repository Scope
+## محدودهٔ این مخزن
 
-This repository is:
+این مخزن:
 
-- a personal technical archive;
-- a record of practical Windows/Delphi deployment experience;
-- intended to document runtime-dependency recovery issues;
-- independent of Embarcadero.
+- یک آرشیو فنی شخصی است؛
+- حاصل تجربهٔ عملی در نصب و نگهداری نرم‌افزارهای Windows/Delphi است؛
+- برای مستندسازی مشکلات مربوط به Runtime Dependencyها ایجاد شده است؛
+- مستقل از Embarcadero است.
 
-This repository is **not**:
+این مخزن:
 
-- an official Embarcadero repository;
-- a replacement for a Delphi or RAD Studio installation;
-- a source of proprietary Embarcadero runtime files;
-- a guarantee that a particular runtime file is compatible with a particular application.
+- مخزن رسمی Embarcadero نیست؛
+- جایگزین نصب Delphi یا RAD Studio نیست؛
+- منبع توزیع فایل‌های proprietary مربوط به Embarcadero نیست؛
+- تضمین نمی‌کند که یک Runtime File مشخص برای یک نرم‌افزار مشخص سازگار باشد.
 
-## Redistribution
+## بازتوزیع فایل‌ها
 
-Files that may be proprietary to Embarcadero or another third party are not distributed in this repository.
+فایل‌هایی که ممکن است متعلق به Embarcadero یا سایر اشخاص ثالث باشند و وضعیت حقوقی بازتوزیع آن‌ها برای این مخزن مشخص نیست، در این repository توزیع نمی‌شوند.
 
-The absence of a file from this repository is intentional. If an application requires a Delphi/Embarcadero runtime dependency, obtain the appropriate file from the application's licensed development environment, an authorized installation, or another source that is legally permitted to provide it.
+نبودن چنین فایل‌هایی در این مخزن عمدی است.
 
-The repository owner does not claim ownership of third-party software or grant any license to use, modify, or redistribute third-party software.
+اگر یک نرم‌افزار به Runtime Dependency مربوط به Delphi/Embarcadero نیاز داشته باشد، فایل موردنیاز باید از محیط توسعهٔ دارای مجوز نرم‌افزار، نصب مجاز مربوطه، یا منبع دیگری که قانوناً مجاز به ارائهٔ آن فایل است تهیه شود.
 
-Users are responsible for complying with the applicable license, EULA, deployment terms, and other legal conditions for the software they use.
+صاحب این مخزن ادعایی نسبت به مالکیت نرم‌افزارهای متعلق به اشخاص ثالث ندارد و هیچ مجوزی برای استفاده، تغییر یا بازتوزیع نرم‌افزارهای اشخاص ثالث اعطا نمی‌کند.
 
-## Troubleshooting Guidance
+مسئولیت رعایت license، EULA، شرایط deployment و سایر الزامات قانونی مربوط به نرم‌افزار مورد استفاده بر عهدهٔ کاربر است.
 
-When an existing application reports a missing runtime dependency:
+## راهنمای کلی عیب‌یابی
 
-1. Record the exact filename and error message.
-2. Identify the Delphi/RAD Studio version used to build the application, if possible.
-3. Determine whether the application uses runtime packages.
-4. Obtain the required dependency from an appropriate licensed or authorized source.
-5. Back up existing files before replacing anything.
-6. Avoid overwriting unrelated system files.
-7. Test the application after restoring the correct dependency.
+هنگامی که یک نرم‌افزار موجود، خطای missing runtime dependency نشان می‌دهد:
 
-## Background
+1. نام دقیق فایل و متن خطا را ثبت کنید.
+2. در صورت امکان، نسخهٔ Delphi/RAD Studio مورد استفاده برای ساخت نرم‌افزار را مشخص کنید.
+3. بررسی کنید که آیا نرم‌افزار از Runtime Packageها استفاده می‌کند یا خیر.
+4. dependency موردنیاز را از یک منبع دارای مجوز یا مجاز تهیه کنید.
+5. پیش از جایگزینی فایل‌ها از فایل‌های موجود نسخهٔ پشتیبان تهیه کنید.
+6. از بازنویسی فایل‌های نامرتبط سیستم خودداری کنید.
+7. پس از بازیابی dependency صحیح، نرم‌افزار را آزمایش کنید.
 
-This repository originated from a simple practical problem.
+## پیشینه
 
-When software was installed for users, it could continue working until a later Windows problem or unrelated software change affected its runtime dependencies. Recovering the application could then require finding which file was missing, locating the correct version, and checking additional dependencies.
+این مخزن از یک مسئلهٔ ساده و عملی شکل گرفت.
 
-The original archive was intended to make that recovery process easier.
+هنگام نصب نرم‌افزار برای مشتریان، ممکن بود برنامه برای مدت طولانی بدون مشکل کار کند و بعد، در اثر یک مشکل Windows یا تغییر نرم‌افزاری نامرتبط، یکی از Runtime Dependencyهای آن حذف یا خراب شود.
 
-The public repository no longer distributes those runtime files. Instead, it preserves the technical context and the lessons learned from maintaining such applications.
+در چنین شرایطی، بازیابی نرم‌افزار ممکن بود نیازمند پیدا کردن فایل مفقود، یافتن نسخهٔ صحیح آن و بررسی dependencyهای دیگر باشد.
 
-## Disclaimer
+مجموعهٔ اولیهٔ این مخزن با هدف ساده‌تر کردن همین فرآیند بازیابی ایجاد شد.
 
-This repository is provided for documentation and reference purposes.
+فایل‌های Runtime موردنظر دیگر در این repository عمومی توزیع نمی‌شوند. این مخزن اکنون صرفاً زمینهٔ فنی و تجربهٔ حاصل از نگهداری چنین نرم‌افزارهایی را مستند می‌کند.
 
-No compatibility, availability, ownership, or redistribution rights are implied for third-party software mentioned or discussed here.
+## سلب مسئولیت
 
-For current licensing, deployment, and redistribution requirements, consult the official documentation and license terms applicable to the specific Delphi/RAD Studio version and software involved.
+این مخزن برای مستندسازی و استفادهٔ مرجع ارائه شده است.
+
+وجود نام یک نرم‌افزار، فناوری یا فایل شخص ثالث در مستندات این مخزن به معنی مالکیت، تضمین سازگاری، اجازهٔ استفاده یا اجازهٔ بازتوزیع آن نیست.
+
+برای اطلاع از شرایط جاری license، deployment و redistribution، به مستندات رسمی و شرایط مجوز مربوط به نسخهٔ مشخص Delphi/RAD Studio و نرم‌افزار موردنظر مراجعه کنید.
